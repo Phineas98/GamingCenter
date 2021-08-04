@@ -40,6 +40,6 @@ registerSchema.pre("save", async function(next) {
 
 // now we create a collections 
 
-const Register = new mongoose.model("userData", registerSchema);
+const Register = new mongoose.model("user_Data", registerSchema);
 
 module.exports = Register;
