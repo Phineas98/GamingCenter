@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/Login", {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/gaming', {
   useNewUrlParser:true,
   useUnifiedTopology:true,
   useCreateIndex:true
@@ -9,3 +9,5 @@ mongoose.connect("mongodb://localhost:27017/Login", {
 }).catch((e) =>{
   console.log("No connection")
 })
+
+
