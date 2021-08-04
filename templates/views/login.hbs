@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/f527fe6f3e.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  {{>navbar}}
+<div class="container">
+  <div class="content">
+    <header>LOGIN FORM</header>
+    <form action="/login" method="POST">
+      <div class="field">
+        <span class="fa fa-user"></span>
+        <input type="email" required id="name" placeholder="Enter your Email" name="email">
+      </div>
+      <div class="field space">
+        <span class="fa fa-lock"></span>
+        <input type="password" class="password" required id="password" placeholder="Enter your password" name="password">
+        <span class="show">Show</span>
+      </div>
+      <label class="checkbox-rem">
+        <input type="checkbox" value="remember-me">
+        Remember me
+      </label>
+      <div class="pass">
+        <a href="#">Forgot Password ?</a>
+      </div>
+      <div class="field">
+        <input type="submit" id="Login" value="Login">
+      </div>
+     {{!-- <button class="loginbtn" type="submit">Login</button> --}}
+      <div class="signup">Don't have account?
+        <a href="/register">Signup Now</a>
+      </div>
+    </form>
+  </div>
+</div>
+  
+
+
+<script>
+  const pass_field = document.querySelector('.password');
+  const show_btn = document.querySelector('.show');
+  show_btn.addEventListener('click', function(){
+   if(pass_field.type === "password"){
+     pass_field.type = "text";
+     show_btn.textContent = "HIDE";
+     show_btn.style.color = "#3498db";
+   }else{
+     pass_field.type = "password";
+     show_btn.textContent = "SHOW";
+     show_btn.style.color = "#222";
+   }
+  });
+</script>
+
+ <footer>
+    <div class="center">
+        Copyright &copy; www.PS_GAMING.com All Rights Reserved!
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo{
+  display: block;
+  padding: 14px 11px;
+}
+.logo img{
+  display: block;
+  height: 72px;
+  border-radius: 50%;
+  animation: animate 2s linear infinite;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0.7);
+  }
+  100%{
+    transform: scale(0.9);
+  }
+}
+.bg{
+  box-shadow: -4px 4px 40px blac
+}
+#navbar{
+   /* text-align: center;
+   justify-content: center; */
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #3498db;
+}
+#navbar ul{
+  display: flex;
+  list-style: none;
+  margin: 40px 484px;
+  text-align: center;
+   justify-content: center;
+}
+#navbar ul li a{
+  text-decoration: none;
+  padding: 7px 34px;
+  margin: 2px 2px;
+  font-size: 21px;
+  color: white;
+  font-weight: 600;
+}
+#navbar ul li a:hover{
+  color: white;
+  background: black;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+/* #navbar:before{
+  content: "";
+    background-color: #2691d9;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 105px;
+      width: 100%;
+      left: 0px;
+     z-index: -1;
+}  */
+.container{
+  background: url('./b.jpg')no-repeat center center/cover;
+  height: 100vh;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 370px;
+text-align: center;
+padding: 60px 32px;
+background: #0b1522 ;
+box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background:transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.space{
+  margin-top: 16px;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: rgb(29, 14, 240);
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: #1968cf;
+}
+.signup{
+  color: white;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+
+.signup a:hover{
+  text-decoration: underline;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display:none;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+
+}
+.password:valid ~ .show{
+  display: block;
+}
+
+
+/* Registration form  */  
+section{
+  position: relative;
+  min-height: 100vh;
+  background: url('./bg2.jpg')no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.user{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 370px;
+text-align: center;
+padding: 60px 32px;
+background:#0b1522 ;
+box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.form header{
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.base{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+  border-radius: 20px;
+}
+.base input{
+  height: 100%;
+  width: 100%;
+  background:transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+.break{
+  margin-top: 16px;
+}
+.base input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+.base input[type="submit"]:hover{
+  background: #1968cf;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display:none;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+
+}
+.password:valid ~ .show{
+  display: block;
+}
+
+
+
+
+/* Home Section  */
+
+
+#home{
+  display: flex;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  height: 736px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before{
+  content: "";
+  background:url('b.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 993px;
+  width: 100%;
+  z-index: -1;
+ 
+}
+
+.secondary-heading{
+ color: rgb(129, 15, 206);
+  cursor: pointer;
+  font-family: 'Ubuntu', 'sans-serif';
+  font-size: 68px;
+  padding: 13px 2px;
+  margin: 3px 30px;
+  /* text-shadow: 0px 10px 10px purple; */
+     
+}
+.secondary-heading:hover{
+ cursor: pointer;
+color: rgb(0, 153, 255);
+     
+}
+#para{
+  cursor: pointer;
+  font-size: 1.8rem;
+  padding: 20px 2px;
+  color: white;
+}
+.service-box h2{
+  font-size: 2.5rem;
+}
+
+
+
+#logo{
+ margin: 2px 2px;
+}
+#logo img{
+  height: 70px;
+  padding: 2px 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+#searchbox{
+  display: block;
+  padding: 4px 4px;
+  margin: 9px 152px;
+  right: 23px;
+}
+
+.center{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.outer{
+  position: relative;
+  margin: 0 50px;
+  background: #111;
+}
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+
+.outer button, .outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button{
+  background: #0b1522;
+  color: purple;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  z-index: 9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span{
+  border-radius: 50px;
+}
+
+.outer:hover span:nth-child(1){
+  filter: blur(20px);
+}
+.outer:hover span:nth-child(2){
+  filter: blur(14px);
+}
+
+
+.outer:hover{
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.service-box{
+ display: block;
+ background: url('services.jpg') no-repeat center center/cover;
+ align-items: center;
+ justify-content: center;
+ height: 1320px;
+
+}
+
+#services{
+ margin: 34px;
+ display: flex;
+flex-wrap: wrap;
+}
+#services .box{
+   /* border: 2px solid #0b1522;
+   border-radius: 10px; */
+   margin: 2px 20px;
+   padding: 25px 2px;
+}
+#services .box img{
+ height: 253px;
+ padding: 4px 0px;
+ display: block;
+ margin: auto;
+ cursor: pointer;
+}
+/* #services .box:hover{
+    background: rgb(173, 173, 173);
+} */
+.box h3{
+ border: 2px solid rgb(92, 0, 128);
+ padding: 10px 2px;
+ margin: 2px 102px;
+ justify-content: center;
+ align-items: center;
+ border-radius: 33px;
+ box-shadow: 10px 10px 40px rgb(92, 0, 128) ;
+}
+
+
+#gta img{
+ width: 380px;
+
+}
+#mortal img{
+ width: 380px;
+}
+#cod img{
+ width: 380px;
+}
+#cry5 img{
+ width: 380px;
+}
+#gears5 img{
+ width: 380px;
+
+}
+#pubg img{
+ width: 380px;
+}
+#batman img{
+ width: 380px;
+}
+#cry5 img{
+ width: 380px;
+}
+#resident img{
+ width: 380px;
+}
+#dog2 img{
+ width: 380px;
+}
+#assassin img{
+ width: 380px;
+}
+
+
+footer{
+ background: #0b1522;
+ color: white;
+ padding: 4px 6px;
+ 
+}
+
+
+#home a{
+ position: relative;
+display: inline-block;
+padding: 4px 20px;
+margin: 2px 2px;
+color: rgb(8, 207, 241);
+text-decoration: none;
+text-transform: uppercase;
+font-size: 35px;
+overflow: hidden;
+transition: 0.2s;
+letter-spacing: 4px;
+}
+#home a:hover{
+ color:#255784;
+ background: rgb(8, 207, 241);
+ box-shadow: 0 0 10px rgb(8, 207, 241),0 0 40px rgb(8, 207, 241),0 0 80px rgb(8, 207, 241);
+transition-delay: 1s;
+}
+#home a span{
+ position: absolute;
+ display: block;
+}
+#home a span:nth-child(1){
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background:linear-gradient(90deg,transparent,rgb(8, 207, 241));
+}
+#home a:hover span:nth-child(1){
+ left: 100%;
+ transition: 1s;
+ transition-delay: 1s;
+}
+#home a span:nth-child(3){
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background:linear-gradient(270deg,transparent,rgb(8, 207, 241));
+}
+#home a:hover span:nth-child(3){
+ right: 100%;
+ transition: 1s;
+ transition-delay: 0.5s;
+}
+#home a span:nth-child(2){
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background:linear-gradient(180deg,transparent,rgb(8, 207, 241));
+}
+#home a:hover span:nth-child(2){
+ top: 100%;
+ transition: 1s;
+ transition-delay: 0.25s;
+}
+#home a span:nth-child(4){
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background:linear-gradient(360deg,transparent,rgb(8, 207, 241));
+}
+#home a:hover span:nth-child(4){
+ bottom: 100%;
+ transition: 1s;
+ transition-delay: 0.75s;
+}
+.signin-up{
+  display: flex;
+    /* right: 10px; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 104px;
+  }
+  .sign-reg{
+    padding: 12px 44px;
+    margin: 0px 54px;
+    background: #1968cf;
+    font-weight: 600;
+  }
+  .sign-reg:hover{
+      background: #05479e;
+      transform: scale(1.3);
+      box-shadow:-1px 4px 28px 0px rgba(8, 91, 247, 0.75);
+      border-radius: 25px; 
+  }
+  .login-in{
+    padding: 12px 44px;
+    margin: 0px 54px;
+    background: #03b42f;
+    font-weight: 600;
+  }
+  .login-in:hover{
+    background: #02701e;
+    transform: scale(1.3);
+    box-shadow:-1px 4px 28px 0px rgba(27, 238, 8, 0.75); 
+    border-radius: 25px;
+    
+  }
+  .sign-reg a{
+    text-decoration: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+}
+  .login-in a{
+    text-decoration: none;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.radio{
+ font-size: 22px;
+ color: white;
+}
+.checkbox-rem{
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 10px 0px;
+}
